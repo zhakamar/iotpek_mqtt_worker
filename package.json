@@ -1,0 +1,15 @@
+{
+  "name": "mqtt_worker",
+  "version": "1.0.0",
+  "description": "LoRaWAN data collector",
+  "main": "mqtt_worker.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "henaro",
+  "license": "ISC",
+  "dependencies": {
+    "mqtt": "^4.3.7",
+    "pg": "^8.8.0"
+  }
+}
