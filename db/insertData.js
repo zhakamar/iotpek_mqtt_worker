@@ -5,7 +5,7 @@ async function insertData(data) {
         'INSERT INTO raw_data(deveui, data_hex, payload) VALUES ($1, $2, $3)',
         [data.devEUI, data.data, data]
     );
-    console.log('SQL RESULT:', res);
+    console.log('SQL result:', res);
 }
 
 module.exports = { insertData };
