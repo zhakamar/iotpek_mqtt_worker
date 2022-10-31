@@ -9,7 +9,7 @@ const client = mqtt.connect(
         clean: true
     });
 
-const TOPIC = 'application/#/device/+/rx';
+const TOPIC = 'application/+/device/+/event/up';
 
 client.on('connect', () => console.log('Connected.'));
 
