@@ -21,6 +21,6 @@ client.on('error', err => {
 client.subscribe(TOPIC, { qos: 2 });
 
 client.on('message', (topic, buf) => {
-    console.log(topic, buf.toString());
+    console.log(topic);
     void insertData(buf.toString());
 });
