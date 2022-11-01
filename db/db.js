@@ -1,7 +1,7 @@
 const dotenv = require('dotenv');
 const { Pool } = require('pg');
 
-dotenv.config({ path: __dirname + '/.env'});
+dotenv.config({ path: '.env' });
 
 const config = {
     host: process.env.POSTGRES_HOST,
@@ -12,6 +12,7 @@ const config = {
 }
 
 console.log(config);
+console.log(process.env);
 
 const pool = new Pool(config);
 
