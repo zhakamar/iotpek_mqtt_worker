@@ -22,5 +22,5 @@ client.subscribe(TOPIC, { qos: 2 });
 
 client.on('message', (topic, buf) => {
     console.log(topic);
-    void insertData(buf.toString());
+    void insertData(buf.toJSON());
 });
