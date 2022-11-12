@@ -9,7 +9,7 @@ async function insertData(payload) {
             [devEUI, data, payload]
         ).then(res => console.log(`Inserted ${res.rowCount} rows`));
     } else {
-        console.log('Some strange data received\n' + payload);
+        console.log('Some strange data received\n' + JSON.stringify(payload));
     }
 }
 
